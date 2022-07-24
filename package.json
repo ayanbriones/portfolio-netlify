@@ -8,6 +8,8 @@
     "export": "next export"
   },
   "dependencies": {
+    "@headlessui/react": "^1.6.6",
+    "@heroicons/react": "^1.0.6",
     "cypress": "^10.0.3",
     "next": "^12.1.5",
     "react": "^18.0.0",
