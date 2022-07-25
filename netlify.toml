@@ -10,7 +10,4 @@
     enable = true
 
   [plugins.inputs]
-    skip = true
-  [plugins.inputs.onSuccess]
-    # run tests after the deploy
-    enable = true
+    enable = false
