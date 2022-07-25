@@ -1,23 +1,21 @@
 import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
+import Intro from '@components/Intro'
+import Main from '@components/Main'
 
 export default function Home() {
   return (
-    <div className='container mx-auto'>
+    <div className='container mx-auto bg-slate-900'>
       <Head>
-        <title>Next.js Starter!</title>
-        <link rel='icon' href='/favicon.ico' />
+        <title>Portfolio - Bryanth Briones</title>
       </Head>
 
       <main>
-        <Header title='Bryanth Briones' />
-        <p className='description'>
-          Get started by editing <code>pages/index.js</code>
-        </p>
+        <Header />
+        <Intro />
+        <Main />
       </main>
-
-      <Footer />
     </div>
   )
 }

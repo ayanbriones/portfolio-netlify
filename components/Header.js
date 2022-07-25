@@ -2,21 +2,10 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
-import {
-  AiFillGithub,
-  AiFillInstagram,
-  AiFillLinkedin,
-  AiFillTwitterCircle,
-} from 'react-icons/ai'
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 
-const user = {
-  name: 'Tom Cook',
-  email: 'tom@example.com',
-  imageUrl:
-    'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-}
 const navigation = [
-  { name: 'Bryanth Briones', href: '/', current: true },
+  { name: 'Home', href: '/', current: true },
   { name: 'Projects', href: '#', current: false },
   { name: 'About', href: '#', current: false },
 ]
@@ -42,7 +31,7 @@ export default function Example() {
         ```
       */}
       <div className='min-h-full'>
-        <Disclosure as='nav' className='bg-gray-800'>
+        <Disclosure as='nav' className='bg-inherit'>
           {({ open }) => (
             <>
               <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
@@ -65,7 +54,7 @@ export default function Example() {
                               item.current
                                 ? 'bg-gray-900 text-white'
                                 : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                              'px-3 py-2 rounded-md text-sm font-medium'
+                              'px-3 py-2 rounded-md text-lg font-medium'
                             )}
                             aria-current={item.current ? 'page' : undefined}
                           >
@@ -98,7 +87,7 @@ export default function Example() {
                   </div>
                   <div className='-mr-2 flex md:hidden'>
                     {/* Mobile menu button */}
-                    <Disclosure.Button className='bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white'>
+                    <Disclosure.Button className='inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white'>
                       <span className='sr-only'>Open main menu</span>
                       {open ? (
                         <XIcon className='block h-6 w-6' aria-hidden='true' />
@@ -169,21 +158,6 @@ export default function Example() {
             </>
           )}
         </Disclosure>
-
-        <header className='bg-white shadow'>
-          <div className='max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8'>
-            <h1 className='text-3xl font-bold text-gray-900'>Dashboard</h1>
-          </div>
-        </header>
-        <main>
-          <div className='max-w-7xl mx-auto py-6 sm:px-6 lg:px-8'>
-            {/* Replace with your content */}
-            <div className='px-4 py-6 sm:px-0'>
-              <div className='border-4 border-dashed border-gray-200 rounded-lg h-96' />
-            </div>
-            {/* /End replace */}
-          </div>
-        </main>
       </div>
     </>
   )
