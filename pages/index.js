@@ -6,7 +6,7 @@ import Main from '@components/Main'
 
 export default function Home() {
   return (
-    <div className='container mx-auto bg-slate-900'>
+    <div className='mx-auto bg-slate-900'>
       <Head>
         <title>Portfolio - Bryanth Briones</title>
       </Head>

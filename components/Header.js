@@ -5,7 +5,7 @@ import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 
 const navigation = [
-  { name: 'Home', href: '/', current: true },
+  { name: 'Home', href: '/', current: false },
   { name: 'Projects', href: '#', current: false },
   { name: 'About', href: '#', current: false },
 ]
