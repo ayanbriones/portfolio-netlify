@@ -3,17 +3,15 @@ import React from 'react'
 export default function Intro() {
   return (
     <section className='mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 md:px-20 lg:mt-20 lg:px-20 xl:mt-28 xl:px-20'>
-      <div className='sm:text-center lg:text-left'>
-        <h1 className='text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl'>
-          <span className='block xl:inline text-yellow-100'>Hi, I'm</span>{' '}
-          <span className='block text-yellow-300 xl:inline'>
-            Bryanth Briones
-          </span>
+      <div className='text-center lg:text-left'>
+        <h3 className='block text-yellow-100 text-base'>Hi, I'm</h3>
+        <h1 className='block text-6xl font-extrabold text-yellow-300 text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-red-300'>
+          Bryanth Briones
         </h1>
         <p className='mt-3 text-base text-white sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0'>
-          Web developer
+          Front End Developer
         </p>
-        <div className='mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start'>
+        {/* <div className='mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start'>
           <div className='rounded-md shadow'>
             <a
               href='#'
@@ -22,7 +20,7 @@ export default function Intro() {
               Resume
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   )
