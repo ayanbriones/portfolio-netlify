@@ -46,6 +46,20 @@ export default function Home() {
     <div className='mx-auto bg-[#150c21] max-w-7xl px-4 sm:px-6 md:px-20 lg:px-20 xl:px-20'>
       <Head>
         <title>Portfolio - Bryanth Briones</title>
+        <meta property='og:type' content='Portfolio' />
+        <meta property='og:title' content='Portfolio - Bryanth Briones' />
+        <meta
+          property='og:description'
+          content='Front-End Developer | Javascript, ReactJS, HTML5, CSS'
+        />
+        <meta
+          property='og:url'
+          content='https://portfolio-ayanbriones.vercel.app/'
+        />
+        <meta
+          property='og:image'
+          content='https://portfolio-ayanbriones.vercel.app/images/profile-pic.jpg'
+        />
       </Head>
 
       <Header
